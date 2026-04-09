@@ -60,6 +60,7 @@ Use `--dry-run` with `add` or `remove` when you need a preview without writing t
   - `ru`
   - `sv`
   - `th`
+  - `tr`
   - `uk`
   - `vi`
   - `zh-Hans`

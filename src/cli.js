@@ -97,6 +97,7 @@ const supportedLanguages = new Set([
   "ru",
   "sv",
   "th",
+  "tr",
   "uk",
   "vi",
   "zh-Hans",
