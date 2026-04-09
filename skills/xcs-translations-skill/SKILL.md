@@ -34,6 +34,7 @@ Use `--dry-run` with `add` or `remove` when you need a preview without writing t
   If no `comment` is provided but the UI context is clear, write a short translator-facing comment.
 - `languages`: Optional.
   `show`, `missing`, `add`, and `remove` all work with a specific language.
+  The CLI validates language values against this set.
   If omitted for translation work, use this default set:
   - `ar`
   - `cs`

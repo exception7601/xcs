@@ -242,6 +242,14 @@ describe("cli", () => {
     expect(result.stderr).toContain("Unknown command: rename");
   });
 
+  it("shows an error when the language is not supported", () => {
+    const file = createTempCatalog();
+    const result = runCli(["missing", "--file", file, "--language", "xx"]);
+
+    expect(result.status).toBe(1);
+    expect(result.stderr).toContain("Unsupported language: xx");
+  });
+
   it("shows an error when the catalog file does not exist", () => {
     const result = runCli([
       "missing",

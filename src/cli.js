@@ -72,6 +72,36 @@ function parseCli(argv) {
 }
 
 const projectRoot = fileURLToPath(new URL("../", import.meta.url));
+const supportedLanguages = new Set([
+  "ar",
+  "cs",
+  "da",
+  "de",
+  "el",
+  "en",
+  "es",
+  "et",
+  "fi",
+  "fr",
+  "hi",
+  "hu",
+  "id",
+  "it",
+  "ja",
+  "ko",
+  "nl",
+  "ms",
+  "pl",
+  "pt-BR",
+  "pt-PT",
+  "ru",
+  "sv",
+  "th",
+  "uk",
+  "vi",
+  "zh-Hans",
+  "zh-Hant",
+]);
 
 function requireOption(name, value) {
   if (!value) {
@@ -81,8 +111,16 @@ function requireOption(name, value) {
   return value;
 }
 
+function validateLanguage(language) {
+  if (!supportedLanguages.has(language)) {
+    throw new Error(`Unsupported language: ${language}`);
+  }
+
+  return language;
+}
+
 function requireLanguage(options) {
-  return requireOption("language", options.language);
+  return validateLanguage(requireOption("language", options.language));
 }
 
 function requireKey(options) {
