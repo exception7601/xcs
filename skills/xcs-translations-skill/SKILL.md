@@ -68,13 +68,16 @@ Use `--dry-run` with `add` or `remove` when you need a preview without writing t
 
 ## Translation guide
 
-- Write natural, idiomatic translations.
-- Preserve the original meaning and UI intent.
-- Match the tone to the product context.
-- Prefer natural phrasing over literal translation.
+Act as a native specialist translator and linguistic reviewer.
+Make every translation sound natural, fluent, and culturally appropriate in the target language.
+Preserve the original meaning, context, and UI intent.
+Adapt idioms and expressions instead of translating them literally.
+Respect the intended tone, whether formal, neutral, or informal.
+Ensure correct grammar, spelling, punctuation, and capitalization in every target language.
+Preserve placeholders and format specifiers exactly, including `%@`, `%d`, and `%1$@`, and keep them in the correct position.
+Present translations clearly and professionally, with technical accuracy and strong cultural fit.
+
 - Keep short UI copy concise.
-- Follow normal grammar, punctuation, spacing, and capitalization rules for the target language.
-- Preserve placeholders and format specifiers exactly, including `%@`, `%d`, and `%1$@`.
 - Keep technical tokens and code-like fragments unchanged unless the user explicitly asks otherwise.
 
 ## Commands

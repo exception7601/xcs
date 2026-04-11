@@ -27,6 +27,39 @@
           }
         }
       }
+    },
+    "Add new collection": {
+      "localizations": {
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar nova lista"
+          }
+        }
+      },
+      "comment": "Action to create a new custom movie list"
+    },
+    "Collection": {
+      "localizations": {
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lista"
+          }
+        }
+      },
+      "comment": "Label for a custom movie list"
+    },
+    "Delete Collection": {
+      "localizations": {
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Excluir lista"
+          }
+        }
+      },
+      "comment": "Action to delete a custom movie list"
     }
   }
 }
